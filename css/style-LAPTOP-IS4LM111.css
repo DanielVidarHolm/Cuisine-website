@@ -1,0 +1,153 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html {
+     font-size: 62.5%; 
+}
+p,span,h1,h2,h3,h4,h5,a {
+     font-family:'PT Serif', serif;
+}
+p, span {
+     font-size:1.6rem;
+     color: rgb(12, 12, 36);
+}
+h1 {
+     font-size:5rem;
+     color: rgb(12, 12, 36);
+}
+h2 {
+     font-size: 3.6rem;
+     color: rgb(12, 12, 36);
+}
+li {
+     list-style: none;
+}
+a {
+     font-size:1.6rem;
+     text-decoration: none;
+     color: rgb(12, 12, 36);
+}
+
+fieldset {
+     border: none;
+}
+
+ul {
+     padding:0;
+}
+li {
+     display:inline-block;
+     padding: 0 2rem
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+
+}
+
+footer {
+
+}
+
+/******************************************
+/* Modules
+/*******************************************/
+
+.container {
+     width:100rem;
+     margin: 0 auto;
+     height:50rem;
+     position:relative;
+}
+.content {
+     max-width:100rem;
+     margin: 0 auto;
+}
+.nav ul {
+     float:right;
+     margin-right: 5rem;
+}
+.content-box-l {
+     position:absolute;
+     width:35rem;
+     height:35rem;
+     left:10rem;
+     top:10rem;
+}
+
+.content-box-m {
+     position:absolute;
+     width:50rem;
+     height:35rem;
+     left:35%;
+
+}
+.center-aligned {
+     text-align: center;
+}
+iframe {
+     margin:5rem 
+}
+.center {
+     margin: 0 auto;
+
+     
+}
+
+     
+
+.f-l {
+     float:left;
+}
+.f-r {
+     float:right;
+}
+.portrait {
+     display:block;
+     margin: 0 auto;
+     border-radius: 50%;
+}
+.h-1 {
+     font-size: 2.4rem;
+     font-weight:bold;
+     display:block;
+}
+.abover {
+     color:orange;
+}
+.foldable {
+     display:inline-block;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+@media (max-width:1025px) {
+     .foldable {
+          display:block;
+     }
+}
+/******************************************
+/* Theme
+/*******************************************/
