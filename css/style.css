@@ -23,139 +23,186 @@
 
 html {
      font-size: 62.5%; 
-}
-p,span,h1,h2,h3,h4,h5,a {
-     font-family:'PT Serif', serif;
-}
-p, span {
-     font-size:1.6rem;
-     color: rgb(12, 12, 36);
+     font-family: 'Amiri', serif;
 }
 h1 {
-     font-size:5rem;
-     color: rgb(12, 12, 36);
+     font-size: 6rem;
+     font-weight: 700;
+     padding:0 0 2rem ;
 }
 h2 {
-     font-size: 3.6rem;
-     color: rgb(12, 12, 36);
+     font-size: 4rem;
+     font-weight: 700;
+     padding:0 0 1.5rem;
 }
-li {
-     list-style: none;
+h4 {
+     font-size:2.5rem;
+}
+h5 {
+     font-size:2rem;
+     color: orange;
+     padding:0 0 1rem;
+}
+p {
+     font-size:1.8rem;
+     padding: 0 0 1rem;
 }
 a {
-     font-size:1.6rem;
+     font-size:1.8rem;
      text-decoration: none;
-     color: rgb(12, 12, 36);
-}
-
-fieldset {
-     border: none;
-}
-
-ul {
-     padding:0;
-}
-li {
-     display:inline-block;
-     padding: 0 2rem
+     color: black;
+     padding: 0 0 1rem;
 }
 
 /******************************************
-/* LAYOUT
+/* Header
 /*******************************************/
+
+/* base */
 header {
+     background: linear-gradient(0deg, rgb(29, 29, 29), rgb(55, 55, 55));
+}
+header div.logo {
+     background:url('../img/logo.png');
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: 10rem;
+     font-size: 4rem;
+     font-weight: 400;
+     padding-top:4rem;
+     color: #bbc4c2;
+     text-align:center;
+}
+
+
+.important-text{
+     text-transform:uppercase;
+     letter-spacing: 1rem ;
+}
+span.important-text ~ span{
+     display:block;
+     color:#7e7c73;
+     text-transform:uppercase;
+     letter-spacing: 0.6rem ;
+     font-size:2.5rem;
+     
+}
+
+/* nav */
+.nav {
+     display:flex;
+     flex-flow: row nowrap;
+     justify-content:space-between;
+     padding:2rem 0;
+
+}
+.nav-item{
+     padding:2rem 4rem;
+     color:rgb(224, 202, 143);
+     font-size:2rem;
+     letter-spacing: 0.5rem;
+     text-transform: uppercase;
+}
+.nav-item:hover{
+     background: linear-gradient(0deg, rgb(224, 202, 143), rgb(225, 193, 105) );
+     color:rgb(29, 29, 29);
+}
+
+/******************************************
+/* Greeting
+/*******************************************/
+.greeting {
+     display: flex;
+     align-items:center;
+     background:url('../img/steak-on-grill3.jpg') no-repeat;
+     background-size:cover ;
+     height:80rem;
+}
+.greeting > .banner {
+     font-size:5rem;
+     font-weight: 400;
+     letter-spacing: 1rem;
+     margin-left:5rem;
 
 }
 
-footer {
-
+/******************************************
+/* Greeting
+/*******************************************/
+.about-us {
+     padding:15rem 6rem 15rem  15rem;
+     background:url('../img/food-space.jpg');
+     background-size:cover;
+     display:flex;
+     justify-content:end;
 }
-
+.about-us > div {
+     box-shadow:  -8px 0 4px -4px #565656;
+     border-left: 0.2rem solid rgb(187, 196, 194);
+     padding-left: 1rem;
+}
 /******************************************
 /* Modules
 /*******************************************/
 
-.container {
-     max-width:100rem;
+/* Misc */
+.banner {
+     padding:4rem;
+     text-align:center;
+     color:rgb(187, 196, 194);
+     background:rgba(29, 29, 29, 0.8);
+}
+
+/*** Colors ***/
+
+/* background colors */
+.bg-gray {
+     background:rgb(120, 120, 120);
+}
+.bg-white {
+     background:rgb(255, 255, 255);
+}
+.bg-gold {
+     background:rgb(224, 202, 143);
+}
+.bg-black {
+     background:rgb(29, 29, 29);
+}
+.bg-black-ghost {
+     background:rgba(29, 29, 29, 0.5);
+}
+
+/* font colors */
+.gray {
+     color:rgb(120, 120, 120);
+}
+.white {
+     color:rgb(255, 255, 255);
+}
+.gold {
+     color:rgb(224, 202, 143);
+}
+.black {
+     color:rgb(29, 29, 29);
+}
+.angel{
+     color:rgb(187, 196, 194);
+}
+
+/*** sizes ***/
+
+/* width */
+.w-66 {
+     width:66%;
+}
+.w-50 {
+     width:50%;
+}
+.w-33 {
+     width:33%;
+}
+
+/* margin */
+.m-auto {
      margin: 0 auto;
-     height:50rem;
-     position:relative;
 }
-.content {
-     max-width:100rem;
-     margin: 0 auto;
-}
-.nav ul {
-     float:right;
-     margin-right: 5rem;
-}
-.content-box-l {
-     position:absolute;
-     width:35rem;
-     height:35rem;
-     left:10rem;
-     top:10rem;
-}
-
-.content-box-m {
-     position:absolute;
-     width:50rem;
-     height:35rem;
-     left:35%;
-
-}
-.center-aligned {
-     text-align: center;
-}
-iframe {
-     margin:5rem 
-}
-.center {
-     margin: 0 auto;
-
-     
-}
-
-     
-
-.f-l {
-     float:left;
-}
-.f-r {
-     float:right;
-}
-.portrait {
-     display:block;
-     margin: 0 auto;
-     border-radius: 50%;
-}
-.h-1 {
-     font-size: 2.4rem;
-     font-weight:bold;
-     display:block;
-}
-.abover {
-     color:orange;
-}
-.foldable {
-     display:inline-block;
-}
-/******************************************
-/* ADDITIONAL STYLES
-/*******************************************/
-@media (max-width:1025px) {
-     .foldable {
-          display:block;
-     }
-     .resp {
-          height:80rem;
-     }
-}
-@media (max-width:800px) {
-     html {
-          font-size:50%;
-     }
-}
-/******************************************
-/* Theme
-/*******************************************/
