@@ -56,6 +56,9 @@ a {
      color: black;
      padding: 0 0 1rem;
 }
+ul {
+     margin:0;
+}
 
 /******************************************
 /* Header
@@ -213,20 +216,59 @@ span.important-text ~ span{
 }
 
 /******************************************
+/* Review
+/*******************************************/
+.review > .profile-pic,
+.review > .t-big{
+     margin-bottom: 1rem;
+}
+/******************************************
+/* Footer
+/*******************************************/
+
+.footer {
+     background: linear-gradient(0deg, rgb(29, 29, 29), rgb(55, 55, 55));
+     padding:5rem 2rem 3rem;
+}
+.footer * {
+     color:white;
+}
+.footer h5 {
+     margin-top:2rem;
+}
+/******************************************
 /* Modules
 /*******************************************/
+.indent {
+     padding-left:1rem;
+}
+.gap-1 {
+     gap:1rem;
+}
+
 .flex-row {
      display:flex;
      flex-flow: row nowrap;
+}
+.flex-col {
+     display:flex;
+     flex-flow: column nowrap;
+}
+.space-between{
+     justify-content:space-between;
 }
 .container {
      max-width:90%;
      padding:5rem;
      background:rgb(244, 244, 242);
      margin:0 auto 10rem;
-     box-shadow: 0.2rem 0.2rem 2rem -0.5rem rgb(29, 29, 29);
+     box-shadow: 2px 1px 20px -10px rgb(29, 29, 29);
 }
 /* Misc */
+.profile-pic {
+     border-radius:50%;
+     box-shadow:0.2rem 0.2rem 2rem -0.5rem rgb(29, 29, 29);
+}
 .banner {
      padding:4rem;
      text-align:center;
@@ -306,4 +348,7 @@ span.important-text ~ span{
      font-size: 4rem;
 }
 
-/* circle */
+/* displays */
+.d-block {
+     display:block;
+}
