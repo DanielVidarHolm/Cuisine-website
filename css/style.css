@@ -223,7 +223,7 @@ span.important-text ~ span{
      margin-bottom: 1rem;
 }
 /******************************************
-/* Footer
+/* Footerf
 /*******************************************/
 
 .footer {
@@ -235,6 +235,13 @@ span.important-text ~ span{
 }
 .footer h5 {
      margin-top:2rem;
+}
+.footer a {
+     font-style:italic;
+     color:rgb(224, 202, 143);
+}
+.footer h5 {
+     font-size:2rem;
 }
 /******************************************
 /* Modules
@@ -266,6 +273,8 @@ span.important-text ~ span{
 }
 /* Misc */
 .profile-pic {
+     width:64px;
+     height:64px;
      border-radius:50%;
      box-shadow:0.2rem 0.2rem 2rem -0.5rem rgb(29, 29, 29);
 }
